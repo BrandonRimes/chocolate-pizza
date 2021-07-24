@@ -64,6 +64,8 @@ img {
 
 header .left {
   align-items: center;
+  justify-content: space-between;
+  width: 260px;
 }
 
 header .right {
@@ -134,7 +136,7 @@ li {
   height: 32px;
 }
 
-li::before {
+/* li::before {
   content: "";
   position: absolute;
   height: 13px;
@@ -144,13 +146,7 @@ li::before {
   border: thin solid black;
   background-color: white;
   bottom: 0.5em;
-}
-
-
-li:visited {
-  background-color: pink;
-
-}
+} */
 
 #list {
   background-image: url("img/list-bg.png");
@@ -220,4 +216,16 @@ footer {
   align-items: center;
   margin-top: 10px;
   height: 75px;
+}
+
+input {
+  margin-right: 5px;
+}
+
+input:checked {
+  background-color: white;
+}
+
+input:checked + label {
+  text-decoration: line-through;
 }
